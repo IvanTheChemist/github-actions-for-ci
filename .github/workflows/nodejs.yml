@@ -25,7 +25,7 @@ jobs:
           path: public/
   
   test:
-    name: Test on Node version ${{ matrix.node_version }} and OS ${{ matrix.os }}
+    name: Test on different Node and OS version
     needs: build
     runs-on: ${{ matrix.os }}
     strategy:
